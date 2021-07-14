@@ -1,0 +1,400 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common part */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+.container{
+    background: #2D25A0;
+    margin: 0;
+    
+    height: 677px;
+}
+
+/* nav-bar-style strating */
+.nav-head{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+ position: absolute;
+width: 1160px;
+height: 44px;
+left: 156px;
+top: 42px;
+ 
+ 
+ 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    
+   
+    
+
+}
+nav li a{
+    text-decoration: none;
+    margin-right:36px ;
+    font-size: 16px;
+    
+    color: white;
+}
+.login-bar{
+    color: white;
+    background: #E02C6D;
+    padding: 10px 24px;
+    
+   
+  
+}
+.bar{
+    display: none;
+}
+
+
+.head-down{
+    display: flex;
+    margin-left: 156px;
+}
+.heading h1{
+    color: white;
+    margin-top: 207px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+}
+.button-live{
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    color: white;
+    font-size: 16px;
+    border: white;
+}
+.heading-img img{
+    width: 556px;
+    height: 438px;
+    margin-top: 135px;
+    margin-left: 186px;
+}
+
+
+
+/* players card sections */
+.players-store{
+    display: grid;
+    grid-template-columns: repeat(3,331px);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    grid-row-gap: 27px;
+}
+.players-img img{
+    width: 300px;
+    height: 256px;
+}
+.players-card{
+    width: 330px;
+    height: 456px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+.players{
+    width: 300px;
+    height: 426px;
+    padding: 15px;
+   
+}
+
+
+/* high voltage match */
+.high-volt{
+    margin-top: 165px;
+}
+.high-voltage{
+    display: flex;
+    
+    column-gap:20px;
+  
+}
+.high-detail{
+    width: 466px;
+    
+    margin-left: 420px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+.high-detail h1{
+    font-size: 30px;
+}
+.high-image img{
+    width: 567px;
+    height: 427px;
+}
+
+
+/* player  news */
+.news-title h1{
+    margin-left: 416px;
+    color: gray;
+    font-size: 30px;
+}
+.players-news{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 33px;
+    grid-row-gap: 30px;
+}
+.news-frame{
+    overflow: hidden;
+    position: relative;
+
+}
+.news-img img{
+    width: 500px;
+    height: 300px;
+}
+.news-detail{
+    position: absolute;
+    width: 100%px;
+    top: 0;
+    font-size: 12px;
+    display: none;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+.news-frame:hover .news-detail{
+    display: block;
+    background-color: rgba(204, 175, 121, 0.438);
+    cursor: default;
+}
+.news-frame:hover .news-img {
+    transform: scale(1.2);
+    transition: ease-in-out 1s;
+}
+
+
+
+/* footer */
+footer{
+    margin-top: 158px;
+}
+.footer-content{
+    
+    width: 483.87px;
+    height: 213px;
+    margin-left: 37%;
+    margin-bottom: 63px;
+}
+
+.foot-img img{
+    width: 483px;
+    height: 110px;
+   
+}
+.social-icon{
+    font-size: 32px;
+    margin-left: 33%;
+    color: darkgray;
+}
+.foot-last p{
+    font-size: 18px;
+    color:  #000000;
+    margin-left: 20%;
+   
+
+}
+
+
+
+/* media quary mobile version */
+
+@media only screen and (max-width:668px) {
+    .container{
+        background: #2D25A0;
+        margin: 0;
+       
+        width: 295%;
+    }
+    
+/* nav part css */
+    .nav-head {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        position: inherit;
+        margin-left:24% ;
+    }
+    nav ul{
+       
+        display: none;
+       
+        
+    }
+    .head-down{
+        display: block;
+        margin-left: 0;
+    }
+    .heading h1 {
+        color: white;
+        margin-top: 112px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        margin-left: 16px;
+    }
+    .heading-img img {
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+       margin-left: 15px;
+    }
+    .button-live{
+        width: 168px;
+        height: 44px;
+        background: #E02C6D;
+        color: white;
+        font-size: 16px;
+        border: white;
+        margin-left: 19px;
+       
+    }
+    .login-bar {
+        color: white;
+       background: #E02C6D;
+    margin-top: 33px;
+      width: 78px;
+      height: 26px;
+      font-size: 15px;
+      padding: 2px;
+    }
+   .login-system{
+       display: flex;
+       flex-direction: row;
+   }
+   .bar{
+       display: none;
+   }
+    
+
+
+    /* player psrt css*/
+    .players-store {
+        display: grid;
+        grid-template-columns: repeat(1,330px);
+       
+        
+        align-items: center;
+        margin-top: 47px;
+        grid-row-gap: 24px;
+    }
+    .players-card {
+        width: 333px;
+        height: 474px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+        
+    }
+
+
+
+    /* high volatge part css */
+    .high-volt {
+        margin-top: 60px;
+        margin-left: 16px;
+    }
+    .high-voltage {
+        display: block;
+        
+    }
+    .high-detail {
+        width: 329px;
+        margin-left:15px;
+        border: 1px solid lightgray;
+        padding: 15px;
+    }
+    .high-image img {
+        width: 330px;
+        height: 248px;
+        margin-left: 16px;
+        margin-top: 29px;
+    }
+
+   
+    /* news part css */
+    .news-title h1 {
+         margin-left:15px;
+        color: gray;
+        font-size: 30px;
+    }
+    .players-news {
+        display: grid;
+        grid-template-columns: repeat(1,340px);
+        grid-row-gap: 30px;
+    }
+    .news-frame{
+        overflow: hidden;
+        position: relative;
+    
+    }
+    .news-img img {
+        width: 328px;
+        height: 248px;
+        margin-left: 16px;
+        
+    }
+    .news-detail {
+        position: absolute;
+        width: 100%px;
+        top: 0;
+        font-size: 12px;
+        display: none;
+        padding: 20px;
+        color: white;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .news-frame:hover .news-detail{
+        display: block;
+        background-color: rgba(204, 175, 121, 0.438);
+        cursor: default;
+    }
+    .news-frame:hover .news-img {
+        transform: scale(1.2);
+        transition: ease-in-out 1s;
+    }
+
+
+    /* footer part css */
+    footer{
+        margin-top: 54px;
+    }
+    .footer-content {
+        width: 492.87px;
+        height: 213px;
+        margin-left: 0;
+        margin-bottom: 187px;
+    }
+    .foot-img img {
+        width: 290px;
+        height: 80px;
+        margin-left: 35px;
+    }
+    .social-icon {
+        font-size: 32px;
+        margin-left: 29%;
+        color: darkgray;
+    }
+}
